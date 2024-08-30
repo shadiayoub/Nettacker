@@ -2,9 +2,10 @@ version: "3"
 
 services:
   nettacker:
-    build:
-      context: .
-      dockerfile: "Dockerfile"
+    #build:
+      #context: 
+      #dockerfile: "Dockerfile"
+    image: route07/nettacker
     command: poetry run python nettacker.py --start-api --api-host 0.0.0.0
     ports:
       - 5000:5000
